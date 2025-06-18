@@ -3,28 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aryan's Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #161616;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #023d79;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #4c4c4e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .portfolio a{
+            color: #0000aa;
+        }
+        ol {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>Aryan</h1>
-    <br>
-    
-    <a href="./htmlCssJavaScript/HTML.html">HTML</a><br>
-    <a href="./htmlCssJavaScript/CSS.html">CSS</a><br>
-    <a href="./htmlCssJavaScript/JAVASCRIPT.html">JAVSCRIPT</a><br>
-    
-    <h2><a href="./portfolio/index.html">My portfolio</a></h2>
-    <a href="#">My Projects</a>
-    <ol>
-        <li>Project 1</li>
-        <li>project 2</li>
-    </ol>
 
-    <a href="#">My assignments</a>
-    <ol>
-        <li>assignment 1</li>
-        <li>assignment 2</li>
-    </ol>
-    
+    <h1>Aryan</h1>
+
+    <div>
+        <h2>Learning Resources</h2>
+        <div class="links">
+            <a href="./htmlCssJavaScript/HTML.html">HTML</a>
+            <a href="./htmlCssJavaScript/CSS.html">CSS</a>
+            <a href="./htmlCssJavaScript/JAVASCRIPT.html">JavaScript</a>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="portfolio"><a href="./portfolio/index.html">My Portfolio</a></h2>
+    </div>
+
+    <div>
+        <h2>My Projects</h2>
+        <ol>
+            <li>Project 1</li>
+            <li>Project 2</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>My Assignments</h2>
+        <ol>
+            <li>Assignment 1</li>
+            <li>Assignment 2</li>
+        </ol>
+    </div>
+
 </body>
 </html>

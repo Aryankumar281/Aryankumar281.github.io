@@ -20,3 +20,14 @@ db.employees.find(
     {salary:{$gte:3000}},
     {_id:0,name:1}
 ) // to find all employees with salary greater than or equal to 3000 with name only
+
+db.employees.find(
+    {salary:{$gt:3000},department:"IT"},
+    {_id:0,name:1,salary:1}
+) // to find all employees with salary greater than 3000 in IT department with name and salary
+
+db.employees.find(
+    {$or: [{salary:{$lte:3000}},{department:"IT"}]},
+    {_id:0,name:1,salary:1}
+) // to find all employees with salary less than or equal to 3000 or in IT department with name and salary
+db.employees.find({department:{$ne:"IT"}},{_id:0,name:1}) // to find all employees not in IT department with name only

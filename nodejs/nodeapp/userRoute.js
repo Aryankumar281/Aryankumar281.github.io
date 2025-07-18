@@ -1,5 +1,4 @@
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
+
 import express from 'express';
 import { register,login,showUser,patch, remove, profile } from "./userController.js";
 import { authenticate, authorize } from "./auth.js";
@@ -15,6 +14,4 @@ Router.get("/showusers", authenticate, authorize("admin"),showUser);
 Router.patch('/:id',authenticate, authorize("admin"),patch)
 Router.delete("/:id",authenticate, authorize("admin"),remove)
 Router.get("/:id/profile",profile)
-
-
 export default Router;
